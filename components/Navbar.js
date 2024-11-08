@@ -2,28 +2,17 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <nav className="bg-gray-800 p-4">
-      <ul className="flex space-x-4">
-        <li>
-          <Link href="/">
-            <a className="text-white">Home</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/about">
-            <a className="text-white">About</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/projects">
-            <a className="text-white">Projects</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/contact">
-            <a className="text-white">Contact</a>
-          </Link>
-        </li>
+    <nav className="bg-gray-900 p-4">
+      <ul className="flex space-x-4 justify-center">
+        {['Home', 'About', 'Projects', 'Contact'].map((item) => (
+          <li key={item}>
+            <Link href={`/${item.toLowerCase()}`}>
+              <a className="text-white hover:text-secondary transition duration-300">
+                {item}
+              </a>
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );
