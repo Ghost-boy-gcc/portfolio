@@ -13,6 +13,7 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 3s linear infinite',
         'bounce-slow': 'bounce 2s infinite',
+        'pulse-slow': 'pulse 5s infinite',
       },
     },
   },

@@ -8,7 +8,7 @@ export default function Projects() {
         {['Project 1', 'Project 2', 'Project 3'].map((project, index) => (
           <li
             key={index}
-            className="bg-white p-4 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2"
+            className="bg-white p-4 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 hover:scale-105"
           >
             <h2 className="text-xl font-semibold">{project}</h2>
             <p className="mt-2 text-gray-600">Description of {project}</p>
