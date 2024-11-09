@@ -1,0 +1,17 @@
+/* styles/styles.css */
+.custom-button {
+    @apply bg-primary text-white font-bold py-2 px-4 rounded;
+}
+
+.custom-heading {
+    @apply text-4xl font-extrabold text-secondary;
+}
+
+/* styles/styles.css */
+.hero {
+    @apply bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20 text-center;
+}
+
+.project-card {
+    @apply border rounded-lg shadow-lg p-5 transition-transform duration-300 hover:scale-105;
+}
